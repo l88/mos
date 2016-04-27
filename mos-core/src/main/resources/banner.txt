@@ -1,0 +1,7 @@
+        _
+       ( )   _  _    __    ___ 
+-------- ---| \/ |  /  \  |___   
+            |    |  \__/   ___|
+================================
+ :: MOS应用框架::  ${application.formatted-version}
+power by Spring Boot ${spring-boot.formatted-version}
