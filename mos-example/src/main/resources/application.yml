@@ -1,0 +1,7 @@
+logging:
+  level:
+    root: info
+    org.mos.core: debug
+  file: ${mos.home}/logs/mos.log
+  pattern:
+    console: "[%-5p][%t] - %msg%n"

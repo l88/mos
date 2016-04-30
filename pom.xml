@@ -55,9 +55,10 @@
 				<module>mos-parent</module>
 				<module>mos-models</module>
 				<module>mos-core</module>
-				<module>mos-autoconfig</module>
-				<module>mos-starters</module>
-				<module>mos-example</module>
+				
+				<module>autoconfigs</module>
+				<module>starters</module>
+				<module>apps</module>
 			</modules>
 		</profile>
 		<profile>
@@ -67,4 +68,8 @@
 			</modules>
 		</profile>
 	</profiles>
+	<modules>
+		<module>mos-example</module>
+		<module>mos-user</module>
+	</modules>
 </project>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<classPathEntry
+		location="/Users/liangbl/works/mvnresp/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar" />
+	<context id="MySqlTables" targetRuntime="MyBatis3" defaultModelType="flat">
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost:3306/mos?useUnicode=true&amp;characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull&amp;transformedBitIsBoolean=true"
+			userId="mos" password="mos">
+		</jdbcConnection>
+
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<javaModelGenerator targetPackage="org.l88.mos.um.domain"
+			targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="false" />
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="org.l88.mos.um.dao"
+			targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<javaClientGenerator type="MIXEDMAPPER"
+			targetPackage="org.l88.mos.um.dao" targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+		
+		<table schema="mos" tableName="umb_person" domainObjectName="UmbPerson" >
+			<property name="ignoreQualifiersAtRuntime" value="true" />
+			<property name="useActualColumnNames" value="false" />
+			<columnOverride column="PERSON_ID" property="id" jdbcType="NUMERIC" javaType="Long"/>
+			<columnOverride column="EMPLOYEE_ID"  jdbcType="NUMERIC" javaType="Long"/>
+			<ignoreColumn column="HOME_ADDRESS3" />
+			<ignoreColumn column="HOME_ADDRESS4" />
+		</table>
+
+	</context>
+</generatorConfiguration>
