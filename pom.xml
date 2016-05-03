@@ -52,12 +52,7 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<modules>
-				<module>mos-parent</module>
-				<module>mos-models</module>
-				<module>mos-core</module>
-				
-				<module>autoconfigs</module>
-				<module>starters</module>
+
 				<module>apps</module>
 			</modules>
 		</profile>
@@ -69,7 +64,11 @@
 		</profile>
 	</profiles>
 	<modules>
-		<module>mos-example</module>
-		<module>mos-user</module>
+		<module>mos-parent</module>
+		<module>mos-models</module>
+		<module>mos-core</module>
+		<module>mos-starter</module>
+
+		<module>user</module>
 	</modules>
 </project>
